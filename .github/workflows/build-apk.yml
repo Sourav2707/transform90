@@ -22,10 +22,6 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: Download open-source exercise dataset (800+ exercises + photos)
-        working-directory: Transform90
-        run: bash scripts/download_assets.sh
-
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
 
